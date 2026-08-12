@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    int n ,a,b,c,d , sum =0;
+    int n, z ,a,b,c,d , sum =0 , Count = 0;
     cout << "Enter a three digit number: " ;
     cin >> n ;
     if ( n % 2 == 0) {
@@ -28,5 +28,14 @@ int main() {
         sum = a +  c + d ;
         cout << "sum of all digits of " << n << " is " << sum << endl ;
     }
+    
+    z = n ;
+    while( n > 0)
+    { 
+        a = z%10;
+        Count += 1;
+        z = z/10 ;
+    }
+    cout << " no of digits in " << z << " is " << Count << endl ;
     return 0 ;
 }
