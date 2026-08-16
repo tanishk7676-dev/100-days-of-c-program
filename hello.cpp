@@ -1,41 +1,30 @@
-//Number Analyzer
+// Armstrong no. checker 
 #include <iostream>
-using namespace std;
+using namespace std ;
 
-int main() {
-    int n, z ,a,b,c,d , sum =0 , Count = 0;
-    cout << "Enter a three digit number: " ;
-    cin >> n ;
-    if ( n % 2 == 0) {
-        cout << n << " is an even number." << endl ;
-    } else {
-        cout << n << " is an odd number." << endl ;
-    }
+int main(){
+    int n ,a,c ,z , sum = 0 , Count = 0;
 
-    if ( n > 0 ){
-        cout << n << " is a posetive integer" << endl ;
-    } else if (n < 0){
-        cout << n << " is a negetive integer" << endl ;
-    } else {
-        cout << n << " is zero" << endl ;
-    }
-
-    if(n>0){
-         a = n / 100;
-         b = n %100;
-         c = b %10;
-         d =b/10;
-        sum = a +  c + d ;
-        cout << "sum of all digits of " << n << " is " << sum << endl ;
-    }
-    
+    cout << " enter any number" << endl ;
+    cin  << n 
     z = n ;
     while( n > 0)
     { 
         a = z%10;
         Count += 1;
         z = z/10 ;
+
     }
-    cout << " no of digits in " << z << " is " << Count << endl ;
+    c =n ;
+    while( n > 0)
+    { 
+        a = c%10;
+        c = c/10 ;
+        sum = a**3;
+
+    }
+    if( sum == n){
+        cout << "The no " << n <<" is an Armstrong number "<< endl;
+    }
     return 0 ;
 }
