@@ -11,7 +11,7 @@ int main(){
     } else {
         printf( " zero division is not defined");
     }
-    printf(" sum = %d , diffrence = %d , multipley = %d , division = %d", sum , diff , m ,div );
+    printf(" sum = %d , diffrence = %d , multipley = %d , division = %d", sum , diff , m ,div );   
     return 0 ;
     
 }
