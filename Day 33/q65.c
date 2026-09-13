@@ -36,8 +36,8 @@ int main() {
         }
     }
 
-    if(found == 0)
+    if(found == 0){
         printf("Element not found");
-
+    }
     return 0;
 }
