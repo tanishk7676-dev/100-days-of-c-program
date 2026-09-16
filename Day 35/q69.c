@@ -30,5 +30,6 @@ int main() {
     printf("%d", second);
 
     return 0;
-}
+}./q69.exe
+
 
